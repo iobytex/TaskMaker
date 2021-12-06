@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="taskWithTypes"
+            type="com.iobytex.domain.TaskWithTypes" />
+        <variable
+            name="clickListener"
+            type="com.iobytex.dashboard.TaskItemClickListener" />
+        <variable
+            name="taskflow"
+            type="com.iobytex.utils.Utils.TaskFlow" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/taskcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        app:backgroundColor="@{taskWithTypes.task.color}"
+        app:cardCornerRadius="@dimen/cardRadius"
+        app:cardElevation="0dp"
+        app:elevation="0dp"
+        android:elevation="0dp"
+        tools:cardBackgroundColor="@color/purple_200">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/taskcardcontainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@id/ic_note"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/ic_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/chipGroup"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.79"
+                app:layout_constraintStart_toEndOf="@+id/chipGroup"
+                app:layout_constraintTop_toTopOf="@id/chipGroup"
+                app:checkable="true"
+                app:clickable="true"
+                app:onClick="@{(view) -> clickListener.onClick(view,taskWithTypes,taskflow.Edit)}"
+                android:src="@drawable/ic_edit_square"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_bold"
+                android:maxLines="1"
+                android:textSize="@dimen/dimen_16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/chipGroup"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/chipGroup"
+                app:layout_constraintTop_toBottomOf="@id/chipGroup"
+                tools:text="Taking My Sister to School" />
+
+            <LinearLayout
+                android:id="@+id/taskdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="@id/note"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/note"
+                app:layout_constraintTop_toBottomOf="@id/note">
+
+                <ImageView
+                    android:id="@+id/ic_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_calendar" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:paddingStart="10dp"
+                    android:textSize="10sp"
+                    tools:text="12 October 2021" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tasktime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/taskdate"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/taskdate"
+                app:layout_constraintTop_toBottomOf="@+id/taskdate"
+                app:layout_constraintVertical_bias="0.7">
+
+                <ImageView
+                    android:id="@+id/ic_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_time_square" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:paddingStart="10dp"
+                    android:text="07:30 (Remind At 07:15)"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ic_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/tasktime"
+                app:layout_constraintEnd_toEndOf="@id/ic_note"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/tasktime"
+                app:layout_constraintTop_toTopOf="@id/tasktime"
+                app:checkable="true"
+                app:clickable="true"
+                app:onClick="@{(view) -> clickListener.onClick(view,taskWithTypes,taskflow.Done)}"
+                app:srcCompat="@drawable/ic_fluent_circle_24_selector"
+                android:focusable="true" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

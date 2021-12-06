@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard"
+    app:startDestination="@id/dashBoardFragment">
+    <fragment
+        android:id="@+id/dashBoardFragment"
+        android:name="com.iobytex.dashboard.DashBoardFragment"
+        android:label="@string/dashboard">
+        <action
+            android:id="@+id/action_dashBoardFragment_to_task_option"
+            app:destination="@id/task_option" />
+        <action
+            android:id="@+id/action_dashBoardFragment_to_fillTaskFragment"
+            app:destination="@id/fillTaskFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/categoryFragment"
+        android:name="com.iobytex.category.CategoryFragment"
+        android:label="CategoryFragment" />
+    <dialog
+        android:id="@+id/fillTaskFragment"
+        android:name="com.iobytex.option.FillTaskFragment"
+        android:label="FillTaskFragment" >
+        <argument
+            android:name="taskWithTypes"
+            app:argType="com.iobytex.domain.TaskWithTypes"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </dialog>
+    <include app:graph="@navigation/task_option" />
+</navigation>

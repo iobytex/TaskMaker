@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/task_option"
+    app:startDestination="@id/optionTaskFragment">
+
+    <dialog
+        android:id="@+id/optionTaskFragment"
+        android:name="com.iobytex.option.TaskOptionFragment"
+        android:label="OptionTaskFragment">
+        <action
+            android:id="@+id/action_optionTaskFragment_to_scanTaskFragment"
+            app:destination="@id/scanTaskFragment" />
+        <action
+            android:id="@+id/action_optionTaskFragment_to_fillTaskFragment"
+            app:destination="@id/fillTaskFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/fillTaskFragment"
+        android:name="com.iobytex.option.FillTaskFragment"
+        android:label="FillTaskFragment" >
+        <argument
+            android:name="taskWithTypes"
+            app:argType="com.iobytex.domain.TaskWithTypes"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </dialog>
+    <dialog
+        android:id="@+id/scanTaskFragment"
+        android:name="com.iobytex.option.ScanTaskFragment"
+        android:label="ScanTaskFragment" >
+        <action
+            android:id="@+id/action_scanTaskFragment_to_fillTaskFragment"
+            app:destination="@id/fillTaskFragment" />
+    </dialog>
+</navigation>

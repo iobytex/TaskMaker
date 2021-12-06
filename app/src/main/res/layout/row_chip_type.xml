@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="type"
+            type="com.iobytex.domain.Type" />
+    </data>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:paddingVertical="6dp"
+        android:text="@{type.title}"
+        tools:text="School"
+        android:textSize="8sp"
+        app:elevation="0dp"
+        android:elevation="0dp"
+        app:chipCornerRadius="@dimen/cardRadius"
+        app:chipEndPadding="12dp"
+        app:chipMinTouchTargetSize="10dp"
+        app:chipStartPadding="12dp"
+        app:chipStrokeColor="@color/alphablack"
+        app:chipStrokeWidth="@dimen/chipstroke"
+        tools:ignore="TouchTargetSizeCheck" />
+</layout>

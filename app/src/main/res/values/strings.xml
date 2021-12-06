@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Task</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="notification">Notification</string>
+
+    <string name="name"> <small> Hey! 👋 </small> </string>
+    <string name="weather"> Today\'s Weather: %1$s %2$s</string>
+
+    <string name="welcome">Welcome Back!</string>
+    <string name="update">Here\'s Update Today.</string>
+    <string name="search">Search</string>
+    <string name="input">Input</string>
+    <string name="task">Task</string>
+    <string name="editTask">Edit Task</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="setting">Setting</string>
+    <string name="profile">Profile</string>
+    <string name="newTask">New Task</string>
+
+    <string name="today">Today</string>
+    <string name="neglected">Neglected</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="taskDone">Task Done</string>
+    <string name="category">Category</string>
+    
+    <string name="colorTask">Color Task</string>
+    <string name="myNewTask">My New Task</string>
+    <string name="deadLine">Deadline</string>
+    <string name="place">Place</string>
+    <string name="taskType">Task Type</string>
+    <string name="qrCode">Qrcode</string>
+    <string name="attachFile">Attach File</string>
+    <string name="saveTask">Save Task</string>
+
+    <string name="save">Save</string>
+    <string name="scanTask">Scan Task</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

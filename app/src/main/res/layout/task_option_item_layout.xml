@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="optionTask"
+            type="com.iobytex.domain.OptionTask" />
+
+        <variable
+            name="clickListener"
+            type="com.iobytex.option.InputTaskListener" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        app:contentPaddingLeft="40dp"
+        app:contentPaddingRight="40dp"
+        app:contentPaddingTop="90dp"
+        app:contentPaddingBottom="90dp"
+        app:elevation="0dp"
+        android:elevation="0dp"
+        android:onClick="@{(view) -> clickListener.onClick(view,optionTask.id)}"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_height="wrap_content"
+        tools:background="@color/secondaryColor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/task_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                taskOptionImage="@{optionTask.imageIcon}"
+                tools:src="@drawable/ic_fluent_add_20_regular" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{optionTask.title}"
+                tools:text="Scan" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

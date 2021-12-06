@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/OpenSource/Task/app/src/main/res/drawable/background_toolbar_translucent.xml" value="0.14358108108108109" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/drawable/chip_outline.xml" value="0.18504273504273505" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/drawable/chip_outline_selected.xml" value="0.18504273504273505" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/drawable/fill_task_type_color.xml" value="0.18162393162393162" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/drawable/fill_task_type_color_selected.xml" value="0.18162393162393162" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/drawable/fill_task_type_color_selector.xml" value="0.18162393162393162" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/drawable/ic_arrow___left_2.xml" value="0.18504273504273505" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/drawable/ic_calendar.xml" value="0.18504273504273505" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/drawable/ic_category.xml" value="0.18504273504273505" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/drawable/ic_edit_square.xml" value="0.18504273504273505" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/drawable/ic_notification.xml" value="0.18504273504273505" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/drawable/ic_paper.xml" value="0.18504273504273505" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/drawable/ic_plus.xml" value="0.18504273504273505" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/drawable/ic_tick_square.xml" value="0.18504273504273505" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/drawable/ic_time_square.xml" value="0.18504273504273505" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/drawable/selector_tab.xml" value="0.18504273504273505" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/category_item_layout.xml" value="0.25" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/dashboard_layout.xml" value="0.1717948717948718" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/fill_task_color_picker.xml" value="0.1" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/fragment_add_new_task.xml" value="0.4093686354378819" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/fragment_add_task.xml" value="0.1717948717948718" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/fragment_category.xml" value="0.25" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/fragment_dashboard.xml" value="0.10461956521739131" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/fragment_edit_task.xml" value="0.1717948717948718" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/fragment_fill_task.xml" value="0.22" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/fragment_input_task.xml" value="0.1" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/fragment_neglected.xml" value="0.1717948717948718" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/fragment_notification.xml" value="0.18614130434782608" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/fragment_profile.xml" value="0.1717948717948718" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/fragment_scan_task.xml" value="0.22" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/fragment_select_task.xml" value="0.17255434782608695" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/fragment_setting.xml" value="0.1717948717948718" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/fragment_task_done.xml" value="0.1717948717948718" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/fragment_task_option.xml" value="0.13080601092896174" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/fragment_today.xml" value="0.1717948717948718" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/fragment_typed_task.xml" value="0.1717948717948718" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/fragment_upcoming.xml" value="0.1717948717948718" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/input_task_item_layout.xml" value="0.33" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/row_chip_typ.xml" value="0.13046448087431695" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/row_chip_type.xml" value="0.67" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/task_card_layout.xml" value="0.28976572133168926" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/task_done_card_layout.xml" value="0.18" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/task_item_layout.xml" value="0.21" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/task_option_item_layout.xml" value="0.13080601092896174" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/layout/today_upcoming_task_card_layout.xml" value="0.31353591160220995" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/menu/dashboard.xml" value="0.1717948717948718" />
+        <entry key="..\:/OpenSource/Task/app/src/main/res/menu/dialog_menu.xml" value="0.16962025316455695" />
+        <entry key="..\:/Users/HP/.gradle/caches/transforms-3/73c7aa3d12f56087498b4c37c1759fd8/transformed/jetified-fluent-system-icons-1.1.150/res/drawable/ic_fluent_checkmark_16_selector.xml" value="0.18162393162393162" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

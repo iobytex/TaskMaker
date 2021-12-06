@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="floatingbutton">20dp</dimen>
+    <dimen name="dimen_18sp">18sp</dimen>
+    <dimen name="dimen_16sp">16sp</dimen>
+    <dimen name="dimen_21sp">21sp</dimen>
+    <dimen name="dashboard_10dp">10dp</dimen>
+    <dimen name="cardRadius">18dp</dimen>
+    <dimen name="chipstroke">0.5dp</dimen>
+</resources>
