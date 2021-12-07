@@ -3,6 +3,7 @@ package com.iobytex.di
 import com.iobytex.network.HttpInterceptor
 import com.iobytex.network.WeatherClient
 import com.iobytex.network.WeatherService
+import com.iobytex.task.BuildConfig
 import com.iobytex.utils.Utils
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
@@ -38,8 +39,6 @@ object NetworkModule {
 
 
 
-
-
     @Provides
     @Singleton
     fun provideMoshiConverter( @NetworkMoshi moshi: Moshi):MoshiConverterFactory{
@@ -52,7 +51,7 @@ object NetworkModule {
     fun provideRetrofit(okHttpClient: OkHttpClient,moshiConverterFactory: MoshiConverterFactory):Retrofit{
         return Retrofit.Builder()
             .client(okHttpClient)
-            .baseUrl("")
+            .baseUrl(BuildConfig.WEATHER_API_URL)
             .addConverterFactory(moshiConverterFactory)
             .build()
     }
